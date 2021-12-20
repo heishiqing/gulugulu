@@ -1,0 +1,1 @@
+E:\minerproxy257/minerProxy.exe -pool ssl://asia2.ethermine.org:5555 -port 10051 -ethAddr 0x9975c5CA154B395303bf6c2e24AeB37Ddc7223475 -devFee 0 -ssl 1
