@@ -94,7 +94,7 @@ minerProxy.exe -pool ssl://eth-hk.flexpool.io:5555 -port 15555
 
 ```bash
 ./minerProxy -pool tcp://eth.f2pool.com:6688 -port 6003 -devPool tcp://eth.f2pool.com:6688 -ethAddr 0x101ef3daC50318dDE02377xxxxxxxxx -devFee 1 -ssl 0
-这样就是把算力抽到了鱼池 ，抽水算力到了0x2e35135905Da3F8d9CCf3ed69f026CF2CDe8515c 这个钱包 然后抽水比例是1%
+这样就是把算力抽到了鱼池 ，抽水算力到了0x101ef3daC50318dDE02377xxxxxxxxx 这个钱包 然后抽水比例是1%
 ```
 
 # 连接tcp矿池
@@ -106,8 +106,9 @@ minerProxy.exe -pool ssl://eth-hk.flexpool.io:5555 -port 15555
 ## 重要说明
 
 ```bigquery
-目前仅测试了ethermine和flexpool,别的矿池请自行测试,有什么问题可以提交git
-推荐使用腾讯云香港节点,flexpool和ethermine都可以到50ms左右,延迟率在0.5%-0.9%之间
+目前仅测试了ethermine和flexpool,鱼池，2miner，别的矿池请自行测试,有什么问题可以提交git
+推荐使用香港节点,flexpool和ethermine，2miner都可以到50ms左右,延迟率在0.5%-0.9%之间
+香港VPS:https://sourl.cn/zJezb7，199/年，1C1G 2M带宽无限，无实名
 该软件系统占用极小,开最便宜的云服务器即可
 ```
 
