@@ -2,7 +2,7 @@
 ## 更新日志
 
 ```bigquery
-2021-12-08 03:19   更新桌面版本
+2021-12-12 12:19   更新桌面版本
 2021-12-08 17:44    2.3.1版本更新内容
                     1.解决了奇怪的bug222
                     2.解决鱼池,hiveon矿池TCP粘包问题
@@ -30,7 +30,7 @@
 2021-12-03 06:30    内测>>>修复了部分矿机名显示为default的问题
 ```
 
-## Liunx下
+## Liunx
 
 ```bash
 git clone https://github.com/heishiqing/minerproxy.git
