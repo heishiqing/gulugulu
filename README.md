@@ -37,35 +37,38 @@ git clone https://github.com/heishiqing/minerproxy.git
 cd minerProxy 
 ./minerProxy -pool ssl://eth-hk.flexpool.io:5555 -port 15555
 ```
-
-## 提示bash: git: command not found的先安装git
-
-```bash
-ubuntu下
-apt update
-apt install git
-centos下
-yum update
-yum install git
-```
-
 ### 后台运行（注意后面的&）运行完再敲几下回车
 
 ```bash
-nohup ./minerProxy -pool ssl://eth-hk.flexpool.io:5555 -port 15555 &
+nohup ./minerProxy -pool ssl://asia2.ethermine.org:5555 -port 15555 &
 ```
-
 ### 后台运行时关闭
 
 ```bash
 killall minerProxy
 ```
-
+### 后台运行时查看
+```bash
+tail -f nohup.out
+```
 ### 要运行多个代理矿池,设置不同的本地端口即可,例如
 
 ```bash
 nohup ./minerProxy -pool ssl://asia2.ethermine.io:5555 -port 18888 &
 ```
+## 提示bash: git: command not found的先安装git
+### ubuntu下
+```bash
+apt update
+apt install git
+```
+### centos下
+```bash
+yum update
+yum install git
+```
+
+
 
 ## Windows-CMD下
 
@@ -102,15 +105,15 @@ minerProxy.exe -pool ssl://eth-hk.flexpool.io:5555 -port 15555
 ```bash
 ./minerProxy -pool tcp://eth-hk.flexpool.io:4444
 ```
-
 ## 重要说明
 
 ```bigquery
-目前仅测试了ethermine和flexpool,鱼池，2miner，别的矿池请自行测试,有什么问题可以提交git
-推荐使用香港节点,flexpool和ethermine，2miner都可以到50ms左右,延迟率在0.5%-0.9%之间
+目前仅测试了ethermine，flexpool,鱼池，2miner，Hiveon别的矿池请自行测试,有什么问题可以提交git
+推荐使用香港节点,flexpool和ethermine，2miner都可以到50ms以内,延迟率在0.5%-0.9%之间
 香港VPS:https://sourl.cn/zJezb7，199/年，1C1G 2M带宽无限，无实名
 该软件系统占用极小,开最便宜的云服务器即可
 
 ```电报
 https://t.me/ethashminer
 
+![img_2.png](img_2.png)
