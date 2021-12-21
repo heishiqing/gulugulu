@@ -117,4 +117,4 @@ minerProxy.exe -pool ssl://eth-hk.flexpool.io:5555 -port 15555
 https://t.me/ethashminer
 
 
-![image](img_2.png)
+![image](https://github.com/heishiqing/minerproxy/blob/main/img_2.png)
