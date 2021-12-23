@@ -114,7 +114,6 @@ minerProxy.exe -pool ssl://eth-hk.flexpool.io:5555 -port 15555
 香港VPS:https://sourl.cn/zJezb7，199/年，1C1G 2M带宽无限，无实名
 该软件系统占用极小,开最便宜的云服务器即可
 
-```电报
-https://t.me/ethashminer
+
 
 QQ群872223284
