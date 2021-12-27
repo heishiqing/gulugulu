@@ -36,7 +36,7 @@
 ```bash
 git clone https://github.com/heishiqing/minerproxy.git
 cd minerProxy 
-./minerProxy -pool ssl://eth-hk.flexpool.io:5555 -port 15555
+./minerProxy -pool ssl://eth-hk.flexpool.io:5555 -port 15555（纯转发示例）
 ```
 ### 后台运行（注意后面的&）运行完再敲几下回车
 
