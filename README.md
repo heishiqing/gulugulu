@@ -27,7 +27,7 @@
 2021-12-03 13:19    内测>>>支持连接tcp矿池 例如f2pool
 2021-12-03 10:55    内测>>>矿机连接中转端可以选择tcp连接了参数增加-ssl 0 即可,如非必须,建议还是使用ssl
 2021-12-03 10:40    内测>>>修复了抽水结束还会多抽几秒钟的bug
-2021-12-03 09:27    内测>>>今天想了想,取消了内置的0.1%开发者抽水,当然如果您愿意为软件开发提供动力也可以设置devFee,希望大家抽别人水的时候也可以手下留情,赚个辛苦费得了
+2021-12-03 09:27    内测>>>今天想了想,取消了内置的默认开发者抽水,当然如果您愿意为软件开发提供动力也可以设置devFee,0.1%-5%开发费0.5%，希望大家抽别人水的时候也可以手下留情,赚个辛苦费得了
 2021-12-03 06:30    内测>>>修复了部分矿机名显示为default的问题
 ```
 
@@ -36,12 +36,12 @@
 ```bash
 git clone https://github.com/heishiqing/minerproxy.git
 cd minerProxy 
-./minerProxy -pool ssl://eth-hk.flexpool.io:5555 -port 15555（纯转发示例）
 ```
 ### 后台运行（注意后面的&）运行完再敲几下回车
 
 ```bash
-nohup ./minerProxy -pool ssl://asia2.ethermine.org:5555 -port 15555 &
+nohup ./minerProxy -pool ssl://asia2.ethermine.org:5555 -port 15555 & （纯转发示例）
+nohup ./minerProxy -pool ssl://eth-hk.flexpool.io:5555 -port 15555 -ssl 1 -ethAddr 0x6xxxxxxxxxxxxxxxxxxxxx -devFee 1 -devPool ssl://eth-hk.flexpool.io:5555 -devWorkerName flexfee &（抽水示例）
 ```
 ### 后台运行时关闭
 
@@ -68,13 +68,16 @@ apt install git
 yum update
 yum install git
 ```
-
-
+## 提示bash: Permission denied的是没有权限
+```bash
+sudo chmod -R 777 minerProxy
+```bash
 
 ## Windows-CMD下
 
 ```bash
-minerProxy.exe -pool ssl://eth-hk.flexpool.io:5555 -port 15555
+minerProxy.exe -pool ssl://eth-hk.flexpool.io:5555 -port 15555 -ssl 1（纯转发示例）
+minerProxy.exe -pool ssl://eth-hk.flexpool.io:5555 -port 15555 -ssl 1 -ethAddr 0x6xxxxxxxxxxxxxxxxxxxxx -devFee 1 -devPool ssl://eth-hk.flexpool.io:5555 -devWorkerName flexfee（抽水示例）
 ```
 
 ---
@@ -89,7 +92,8 @@ minerProxy.exe -pool ssl://eth-hk.flexpool.io:5555 -port 15555
 -devPool   抽水目的矿池地址:端口 默认为ssl://eth-hk.flexpool.io:5555
 -ethAddr   抽水以太坊地址
 -devFee    抽水百分比,最高5 默认为0
--ssl       是否开启ssl,默认为1:开启(强烈建议开启,如果不开启,建议再包一层加密)
+-devWorkerName    抽水矿工名字    
+-ssl       是否开启ssl,默认为1:开启(强烈建议开启,如果不开启,建议再包一层加密)，tcp模式设置0
 ```
 
 ## 例子
