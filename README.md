@@ -28,7 +28,7 @@ cd gulugulu
 然后运行nohup ./gulugulu_web &（注意要后台运行，不然会断开）
 cat  config.yml（这个命令可以查看token）
 打开防火墙的18888端口，在网页上输入你的IP:18888，输入token，即可配置
-```
+
 ### 后台运行时关闭
 
 ```bash
@@ -37,18 +37,18 @@ killall gulugulu
 ### 后台运行时查看
 ```bash
 tail -f nohup.out
-```
+
 ## 提示bash: git: command not found的先安装git
 ### ubuntu下
 ```bash
 apt update
 apt install git
-```
+
 ### centos下
 ```bash
 yum update
 yum install git
-```
+
 ## 提示bash: Permission denied的是没有权限
 ```bash
 sudo chmod -R 777 gulugulu
