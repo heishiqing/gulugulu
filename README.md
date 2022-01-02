@@ -2,22 +2,6 @@
   <a href="https://ibb.co/XShYMy2"><img src="https://i.ibb.co/ChkPDJ1/1.jpg" alt="1" border="0"></a>
 </p>
 ## 更新日志
-企鹅下发自查文书，赶快更换VPS，一直企鹅，亚马逊，谷歌，微软都会查中转行为
-
-推荐一：衡天云，刚购买，考察中，个人资料有实名一栏，但是实际不需要实名就可以使用
-https://sourl.cn/A9SLmG 
-
-===============================
-
-推荐二：   （小算力性价比型，大算力不要买）
-香港 VPS，不需要实名，支持windows和Linux
-HK-香港VPS-1C1G-优化带宽-年付特价
-￥199.00 CNY
-地址 https://sourl.cn/zJezb7
-注册以后，查询特价商品
-
-QQ群872223284
-
 ```bigquery
 2022-01-02 14:19   更新版本303（支持WEB）
 2021-12-18 18:19   更新版本257（小白请无脑使用windows版本，QQ群下载，程序猿自行取用linux版）
@@ -101,8 +85,26 @@ sudo chmod -R 777 gulugulu
 ```bigquery
 目前仅测试了ethermine，flexpool,鱼池，2miner，Hiveon别的矿池请自行测试,有什么问题可以提交git
 推荐使用香港节点,flexpool和ethermine，2miner都可以到50ms以内,延迟率在0.5%-0.9%之间
+```
+## 推荐VPS
+```bigquery
+企鹅下发自查文书，赶快更换VPS，一直企鹅，亚马逊，谷歌，微软都会查中转行为
 
+推荐一：衡天云，刚购买，考察中，个人资料有实名一栏，但是实际不需要实名就可以使用
+https://sourl.cn/A9SLmG 
 
+===============================
 
+推荐二：   （小算力性价比型，大算力不要买）
+香港 VPS，不需要实名，支持windows和Linux
+HK-香港VPS-1C1G-优化带宽-年付特价
+￥199.00 CNY
+地址 https://sourl.cn/zJezb7
+注册以后，查询特价商品
+```
+QQ群872223284
+<p align="center">
+  <a href="https://ibb.co/rxc6RzR"><img src="https://i.ibb.co/VgQSczc/QQ-20220102172857.jpg" alt="QQ-20220102172857" border="0"></a>
+</p>
 
 
