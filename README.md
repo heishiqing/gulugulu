@@ -46,20 +46,12 @@ QQ群872223284
 2021-12-03 09:27    内测>>>今天想了想,取消了内置的默认开发者抽水,当然如果您愿意为软件开发提供动力也可以设置devFee,0.1%-5%开发费0.5%，希望大家抽别人水的时候也可以手下留情,赚个辛苦费得了
 2021-12-03 06:30    内测>>>修复了部分矿机名显示为default的问题
 ```
-
 ## Liunx
-
 ```bash
 git clone https://github.com/heishiqing/gulugulu.git
 cd gulugulu 
 然后运行gulugulu_web（注意要后台运行，不然会断开）
 打开防火墙的18888端口，在网页上输入你的IP:18888，输入token，即可配置
-```
-### 后台运行（注意后面的&）运行完再敲几下回车
-
-```bash
-nohup ./gulugulu -pool ssl://asia2.ethermine.org:5555 -port 15555 & （纯转发示例）
-nohup ./gulugulu -pool ssl://eth-hk.flexpool.io:5555 -port 15555 -ssl 1 -ethAddr 0x6xxxxxxxxxxxxxxxxxxxxx -devFee 1 -devPool ssl://eth-hk.flexpool.io:5555 -devWorkerName flexfee &（抽水示例）
 ```
 ### 后台运行时关闭
 
@@ -69,11 +61,6 @@ killall gulugulu
 ### 后台运行时查看
 ```bash
 tail -f nohup.out
-```
-### 要运行多个代理矿池,设置不同的本地端口即可,例如
-
-```bash
-nohup ./gulugulu -pool ssl://asia2.ethermine.io:5555 -port 18888 &
 ```
 ## 提示bash: git: command not found的先安装git
 ### ubuntu下
@@ -90,20 +77,14 @@ yum install git
 ```bash
 sudo chmod -R 777 gulugulu
 ```bash
-
-## Windows-CMD下
-
-```bash
-gulugulu.exe -pool ssl://eth-hk.flexpool.io:5555 -port 15555 -ssl 1（纯转发示例）
-gulugulu.exe -pool ssl://eth-hk.flexpool.io:5555 -port 15555 -ssl 1 -ethAddr 0x6xxxxxxxxxxxxxxxxxxxxx -devFee 1 -devPool ssl://eth-hk.flexpool.io:5555 -devWorkerName flexfee（抽水示例）
 ```
-
----
-
+## Windows下
+```bash
+运行gulugulu_web.exe
+打开防火墙的18888端口，在网页上输入你的IP:18888，输入token，即可配置
+```
 # 参数说明
-
 ## 可以自定义矿池和本地端口 例如
-
 ```bash
 -pool      需要代理的矿池地址:端口 默认为ssl://eth-hk.flexpool.io:5555
 -port      本地端口 默认为15555
@@ -112,21 +93,6 @@ gulugulu.exe -pool ssl://eth-hk.flexpool.io:5555 -port 15555 -ssl 1 -ethAddr 0x6
 -devFee    抽水百分比,最高5 默认为0
 -devWorkerName    抽水矿工名字    
 -ssl       是否开启ssl,默认为1:开启(强烈建议开启,如果不开启,建议再包一层加密)，tcp模式设置0
-```
-
-## 例子
-
-### 往0x101ef3daC50318dDE02377xxxxxxxxx钱包地址抽水1%
-
-```bash
-./gulugulu -pool tcp://eth.f2pool.com:6688 -port 6003 -devPool tcp://eth.f2pool.com:6688 -ethAddr 0x101ef3daC50318dDE02377xxxxxxxxx -devFee 1 -ssl 0
-这样就是把算力抽到了鱼池 ，抽水算力到了0x101ef3daC50318dDE02377xxxxxxxxx 这个钱包 然后抽水比例是1%
-```
-
-# 连接tcp矿池
-
-```bash
-./gulugulu -pool tcp://eth-hk.flexpool.io:4444
 ```
 ## 重要说明
 
