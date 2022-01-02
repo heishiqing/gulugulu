@@ -1,6 +1,8 @@
 <p align="center">
   <a href="https://ibb.co/XShYMy2"><img src="https://i.ibb.co/ChkPDJ1/1.jpg" alt="1" border="0"></a>
 </p>
+<h1 align="center">HI~这里是Gulugulu</h1>
+<h1 align="center">好用的Web挖矿代理软件~ OwO</h1>
 ## 更新日志
 
 ```bigquery
