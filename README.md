@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://ibb.co/XShYMy2"><img src="https://i.ibb.co/XShYMy2/1.jpg" alt="1" border="0"></a>
+  <a href="https://ibb.co/XShYMy2"><img src="https://i.ibb.co/ChkPDJ1/1.jpg" alt="1" border="0"></a>
 </p>
 ## 更新日志
 企鹅下发自查文书，赶快更换VPS，一直企鹅，亚马逊，谷歌，微软都会查中转行为
