@@ -30,6 +30,7 @@ cd gulugulu
 然后运行nohup ./gulugulu_web &（注意要后台运行，不然会断开）
 cat  config.yml（这个命令可以查看token）
 打开防火墙的18888端口，在网页上输入你的IP:18888，输入token，即可配置
+(注意事项，不要使用360等浏览器，使用Chrome或微软Edge浏览器)
 
 ### 后台运行时关闭
 
