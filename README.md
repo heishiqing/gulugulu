@@ -93,13 +93,9 @@ HK-香港VPS-1C1G-优化带宽-年付特价
 地址 https://sourl.cn/zJezb7
 注册以后，查询特价商品
 ```
-优先加入电报群
 
-https://t.me/+3NCHntWEQ6BhODc1
-
-QQ群872223284
 <p align="center">
-  <a href="https://ibb.co/rxc6RzR"><img src="https://i.ibb.co/VgQSczc/QQ-20220102172857.jpg" alt="QQ-20220102172857" border="0"></a>
+  <a href="https://ibb.co/rxc6RzR"><img src="https://i.ibb.co/fknpzyz/QQ-20220102172857.jpg" alt="QQ-20220102172857" border="0"></a>
 </p>
 
 
