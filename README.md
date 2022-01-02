@@ -2,6 +2,7 @@
   <a href="https://ibb.co/XShYMy2"><img src="https://i.ibb.co/ChkPDJ1/1.jpg" alt="1" border="0"></a>
 </p>
 ## 更新日志
+
 ```bigquery
 2022-01-02 14:19   更新版本303（支持WEB）
 2021-12-18 18:19   更新版本257（小白请无脑使用windows版本，QQ群下载，程序猿自行取用linux版）
