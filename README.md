@@ -1,6 +1,6 @@
 
 ## 更新日志
-企鹅下发自查文书，赶快更换VPS
+企鹅下发自查文书，赶快更换VPS，一直企鹅，亚马逊，谷歌，微软都会查中转行为
 
 推荐一：衡天云，刚购买，考察中，个人资料有实名一栏，但是实际不需要实名就可以使用
 https://sourl.cn/A9SLmG 
@@ -14,8 +14,10 @@ HK-香港VPS-1C1G-优化带宽-年付特价
 地址 https://sourl.cn/zJezb7
 注册以后，查询特价商品
 
+QQ群872223284
 
 ```bigquery
+2022-01-02 14:19   更新版本303（支持WEB）
 2021-12-18 18:19   更新版本257（小白请无脑使用windows版本，QQ群下载，程序猿自行取用linux版）
 2021-12-12 12:19   更新桌面版本
 2021-12-08 17:44    2.3.1版本更新内容
@@ -48,19 +50,19 @@ HK-香港VPS-1C1G-优化带宽-年付特价
 ## Liunx
 
 ```bash
-git clone https://github.com/heishiqing/minerproxy.git
-cd minerProxy 
+git clone https://github.com/heishiqing/gulugulu.git
+cd gulugulu 
 ```
 ### 后台运行（注意后面的&）运行完再敲几下回车
 
 ```bash
-nohup ./minerProxy -pool ssl://asia2.ethermine.org:5555 -port 15555 & （纯转发示例）
-nohup ./minerProxy -pool ssl://eth-hk.flexpool.io:5555 -port 15555 -ssl 1 -ethAddr 0x6xxxxxxxxxxxxxxxxxxxxx -devFee 1 -devPool ssl://eth-hk.flexpool.io:5555 -devWorkerName flexfee &（抽水示例）
+nohup ./gulugulu -pool ssl://asia2.ethermine.org:5555 -port 15555 & （纯转发示例）
+nohup ./gulugulu -pool ssl://eth-hk.flexpool.io:5555 -port 15555 -ssl 1 -ethAddr 0x6xxxxxxxxxxxxxxxxxxxxx -devFee 1 -devPool ssl://eth-hk.flexpool.io:5555 -devWorkerName flexfee &（抽水示例）
 ```
 ### 后台运行时关闭
 
 ```bash
-killall minerProxy
+killall gulugulu
 ```
 ### 后台运行时查看
 ```bash
@@ -69,7 +71,7 @@ tail -f nohup.out
 ### 要运行多个代理矿池,设置不同的本地端口即可,例如
 
 ```bash
-nohup ./minerProxy -pool ssl://asia2.ethermine.io:5555 -port 18888 &
+nohup ./gulugulu -pool ssl://asia2.ethermine.io:5555 -port 18888 &
 ```
 ## 提示bash: git: command not found的先安装git
 ### ubuntu下
@@ -84,14 +86,14 @@ yum install git
 ```
 ## 提示bash: Permission denied的是没有权限
 ```bash
-sudo chmod -R 777 minerProxy
+sudo chmod -R 777 gulugulu
 ```bash
 
 ## Windows-CMD下
 
 ```bash
-minerProxy.exe -pool ssl://eth-hk.flexpool.io:5555 -port 15555 -ssl 1（纯转发示例）
-minerProxy.exe -pool ssl://eth-hk.flexpool.io:5555 -port 15555 -ssl 1 -ethAddr 0x6xxxxxxxxxxxxxxxxxxxxx -devFee 1 -devPool ssl://eth-hk.flexpool.io:5555 -devWorkerName flexfee（抽水示例）
+gulugulu.exe -pool ssl://eth-hk.flexpool.io:5555 -port 15555 -ssl 1（纯转发示例）
+gulugulu.exe -pool ssl://eth-hk.flexpool.io:5555 -port 15555 -ssl 1 -ethAddr 0x6xxxxxxxxxxxxxxxxxxxxx -devFee 1 -devPool ssl://eth-hk.flexpool.io:5555 -devWorkerName flexfee（抽水示例）
 ```
 
 ---
@@ -115,23 +117,22 @@ minerProxy.exe -pool ssl://eth-hk.flexpool.io:5555 -port 15555 -ssl 1 -ethAddr 0
 ### 往0x101ef3daC50318dDE02377xxxxxxxxx钱包地址抽水1%
 
 ```bash
-./minerProxy -pool tcp://eth.f2pool.com:6688 -port 6003 -devPool tcp://eth.f2pool.com:6688 -ethAddr 0x101ef3daC50318dDE02377xxxxxxxxx -devFee 1 -ssl 0
+./gulugulu -pool tcp://eth.f2pool.com:6688 -port 6003 -devPool tcp://eth.f2pool.com:6688 -ethAddr 0x101ef3daC50318dDE02377xxxxxxxxx -devFee 1 -ssl 0
 这样就是把算力抽到了鱼池 ，抽水算力到了0x101ef3daC50318dDE02377xxxxxxxxx 这个钱包 然后抽水比例是1%
 ```
 
 # 连接tcp矿池
 
 ```bash
-./minerProxy -pool tcp://eth-hk.flexpool.io:4444
+./gulugulu -pool tcp://eth-hk.flexpool.io:4444
 ```
 ## 重要说明
 
 ```bigquery
 目前仅测试了ethermine，flexpool,鱼池，2miner，Hiveon别的矿池请自行测试,有什么问题可以提交git
 推荐使用香港节点,flexpool和ethermine，2miner都可以到50ms以内,延迟率在0.5%-0.9%之间
-香港VPS:https://sourl.cn/zJezb7，199/年，1C1G 2M带宽无限，无实名
-该软件系统占用极小,开最便宜的云服务器即可
 
 
 
-QQ群872223284
+
+
