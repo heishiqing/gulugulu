@@ -3,6 +3,8 @@
 </p>
 <h1 align="center">HI~这里是Gulugulu</h1>
 <h1 align="center">好用的Web挖矿代理软件~ OwO</h1>
+<h1 align="center"> <a href="https://t.me/+3NCHntWEQ6BhODc1">点我加入飞机群</a>!</h1>
+
 ## 更新日志
 
 ```bigquery
@@ -91,6 +93,10 @@ HK-香港VPS-1C1G-优化带宽-年付特价
 地址 https://sourl.cn/zJezb7
 注册以后，查询特价商品
 ```
+优先加入电报群
+
+https://t.me/+3NCHntWEQ6BhODc1
+
 QQ群872223284
 <p align="center">
   <a href="https://ibb.co/rxc6RzR"><img src="https://i.ibb.co/VgQSczc/QQ-20220102172857.jpg" alt="QQ-20220102172857" border="0"></a>
