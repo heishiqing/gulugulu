@@ -33,7 +33,7 @@ cat  config.yml（这个命令可以查看token）
 
 ```bash
 killall gulugulu
-```
+
 ### 后台运行时查看
 ```bash
 tail -f nohup.out
