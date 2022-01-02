@@ -23,6 +23,7 @@
 ## Liunx
 ```bash
 git clone https://github.com/heishiqing/gulugulu.git
+sudo chmod -R 777 gulugulu（获取权限）
 cd gulugulu 
 然后运行nohup ./gulugulu_web &（注意要后台运行，不然会断开）
 打开防火墙的18888端口，在网页上输入你的IP:18888，输入token，即可配置
