@@ -41,7 +41,19 @@ killall gulugulu
 ```bash
 tail -f nohup.out
 
-## 提示bash: git: command not found的先安装git
+### 防火墙相关命令
+1.防火墙打开
+sudo ufw enable
+2.防火墙重启
+sudo ufw reload
+3.打开想要的端口（以9000为例）
+ufw allow 9000
+4.查看本机端口使用情况
+ufw status
+5.关闭防火墙
+sudo ufw disable
+
+## 提示bash: git: command not found需要先安装git
 ### ubuntu下
 ```bash
 apt update
@@ -52,7 +64,7 @@ apt install git
 yum update
 yum install git
 
-## 提示bash: Permission denied的是没有权限
+## 提示bash: Permission denied是没有权限
 ```bash
 sudo chmod -R 777 gulugulu
 ```bash
