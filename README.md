@@ -3,6 +3,7 @@
 </p>
 <h1 align="center">HI~这里是Gulugulu</h1>
 <h1 align="center">好用的Web挖矿代理软件~ OwO</h1>
+<h1 align="center">纯转发无开发费，开发费：0.1-5%=0.3%，5-10%=0.6%，10-20%=1%~ OwO</h1>
 <h1 align="center"> <a href="https://t.me/+3NCHntWEQ6BhODc1">点我加入飞机群</a>!</h1>
 
 ## 更新日志
