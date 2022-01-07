@@ -77,11 +77,37 @@ sudo chmod -R 777 gulugulu
 代理矿池  （你转发的矿池挖矿地址，官方的）
 本地端口  矿工连接你服务器的端口，比方说222.222.222.222:5678，这里就写5678
 ```
-## 其他说明
+## 如何快速配置
 
 ```bigquery
-目前仅测试了ethermine，flexpool,鱼池，2miner，Hiveon别的矿池请自行测试,有什么问题可以提交git
-推荐使用香港节点,flexpool和ethermine，2miner都可以到50ms以内,延迟率在0.5%-0.9%之间
+web版本快速设置，如果你下载了新版，又想使用过去的配置，不需要在web界面上一个一个添加端口。
+编辑你的config文件，里面有每个端口的详细信息，并且可以修改web端口和token，编辑后保存，运行web进程/web.exe，即会加载所有配置，这时再去web界面会看到所有端口信息。
+示例：
+host: 0.0.0.0
+port: 18888
+token: "123456"
+webserver: true
+server:
+    - port: "8001"
+      ssl: 1
+      proxypool: tcp://eth.f2pool.com:6688
+      devfee: 0.5
+      devpool: tcp://asia2.ethermine.org:4444
+      addr: 0x292c0bxxxxxxxxxxxxxxxxx
+      worker: F2
+      reconnect: 20
+      clientnum: 0
+    - port: "8002"
+      ssl: 1
+      proxypool: ssl://asia2.ethermine.org:5555
+      devfee: 0.5
+      devpool: ssl://asia2.ethermine.org:5555
+      addr: 0x292c0bxxxxxxxxxxxxxxxxxxx
+      worker: Etcp
+      reconnect: 20
+      clientnum: 0
+上面的例子，可以看到每个 “- prot  ”下面有它相应的配置，这样可以复制多个- port，修改相应的内容，快速修改，保存后，即可统一加载，无需在web依次添加。 
+      
 ```
 ## 推荐VPS
 ```bash
