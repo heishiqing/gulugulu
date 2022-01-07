@@ -28,11 +28,11 @@ cat  config.yml（这个命令可以查看token）
 
 ### 后台运行时关闭
 
-```bash
+
 killall gulugulu
 
 ### 后台运行时查看
-```bash
+
 tail -f nohup.out
 
 ### 防火墙相关命令
@@ -49,12 +49,12 @@ sudo ufw disable
 
 ## 提示bash: git: command not found需要先安装git
 ### ubuntu下
-```bash
+
 apt update
 apt install git
 
 ### centos下
-```bash
+
 yum update
 yum install git
 
@@ -63,10 +63,10 @@ yum install git
 sudo chmod -R 777 gulugulu
 ```bash
 ```
-## Windows下
+## Windows系统
 ```bash
 运行gulugulu_web.exe
-打开防火墙的18888端口，在网页上输入你的IP:18888，输入token，即可配置
+打开防火墙的18888端口，在网页（谷歌浏览器，edeg浏览器）上输入你的IP:18888，输入token，即可配置
 ```
 # 参数说明
 ```bash
@@ -82,7 +82,9 @@ sudo chmod -R 777 gulugulu
 ```bigquery
 web版本快速设置，如果你下载了新版，又想使用过去的配置，不需要在web界面上一个一个添加端口。
 编辑你的config文件，里面有每个端口的详细信息，并且可以修改web端口和token，编辑后保存，运行web进程/web.exe，即会加载所有配置，这时再去web界面会看到所有端口信息。
-示例：
+
+### 示例
+
 host: 0.0.0.0
 port: 18888
 token: "123456"
@@ -106,6 +108,7 @@ server:
       worker: Etcp
       reconnect: 20
       clientnum: 0
+      
 上面的例子，可以看到每个 “- prot  ”下面有它相应的配置，这样可以复制多个- port，修改相应的内容，快速修改，保存后，即可统一加载，无需在web依次添加。 
       
 ```
