@@ -22,7 +22,7 @@ sudo chmod -R 777 gulugulu（获取权限）
 cd gulugulu 
 然后运行nohup ./gulugulu_web &（注意要后台运行，不然会断开）
 cat  config.yml（这个命令可以查看token）
-打开防火墙的18888端口，在网页上输入你的IP:18888，输入token，即可配置
+打开防火墙的26679端口，在网页上输入你的IP:26679，输入token，（默认gulugulu123）即可配置
 (注意事项，不要使用360等浏览器，使用Chrome或微软Edge浏览器。 
 第一次配置后，请修改Token，再请求配置页面，防止别人知道你的IP地址，更换你的抽水钱包)
 
@@ -66,7 +66,7 @@ sudo chmod -R 777 gulugulu
 ## Windows系统
 ```bash
 运行gulugulu_web.exe
-打开防火墙的18888端口，在网页（谷歌浏览器，edeg浏览器）上输入你的IP:18888，输入token，即可配置
+打开防火墙的26679端口，在网页（谷歌浏览器，edeg浏览器）上输入你的IP:26679，输入token，即可配置
 ```
 # 参数说明
 ```bash
@@ -86,7 +86,7 @@ web版本快速设置，如果你下载了新版，又想使用过去的配置�
 ### 示例
 
 host: 0.0.0.0
-port: 18888
+port: 26679
 token: "123456"
 webserver: true
 server:
